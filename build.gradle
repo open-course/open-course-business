@@ -1,0 +1,71 @@
+/**************************************************************************************************
+ * Copyright 2011-2016 Cassius Cai <cassiuscai@gmail.com>                                         *
+ *                                                                                                *
+ * Licensed under the Apache License, Version 2.0 (the "License");                                *
+ * you may not use this file except in compliance with the License.                               *
+ * You may obtain a copy of the License at                                                        *
+ *                                                                                                *
+ *     http://www.apache.org/licenses/LICENSE-2.0                                                 *
+ *                                                                                                *
+ * Unless required by applicable law or agreed to in writing, software                            *
+ * distributed under the License is distributed on an "AS IS" BASIS,                              *
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.                       *
+ * See the License for the specific language governing permissions and                            *
+ * limitations under the License.                                                                 *
+ **************************************************************************************************/
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    ext {
+        asciidoctorPluginVersion = "1.5.3"
+        jrubyPluginVersion = "1.2.1"
+    }
+
+    dependencies {
+        classpath("org.asciidoctor:asciidoctor-gradle-plugin:${asciidoctorPluginVersion}")
+        classpath("com.github.jruby-gradle:jruby-gradle-plugin:${jrubyPluginVersion}")
+    }
+}
+
+subprojects {
+
+    ext {
+        asciidoctorDiagramVersion = "1.4.0"
+    }
+    apply plugin: "org.asciidoctor.gradle.asciidoctor"
+    apply plugin: "com.github.jruby-gradle.base"
+
+    dependencies {
+        gems("rubygems:asciidoctor-diagram:${asciidoctorDiagramVersion}")
+    }
+
+    asciidoctor {
+        dependsOn jrubyPrepare
+        sourceDir = ["src/main/docs"]
+        outputDir = ["src/main/book"]
+        backends = ["html", "docbook"]
+        gemPath = jrubyPrepare.outputDir
+        requires = ['asciidoctor-diagram/plantuml', 'asciidoctor-diagram']
+        separateOutputDirs = true
+        options doctype: ['book'], eruby: 'erubis'
+        attributes = [
+                'highlight'    : 'highlight.js',
+                'sectnums'     : 'true',
+                'imagesdir'    : 'images',
+                'toc'          : 'right',
+                'toc-title'    : 'Table of Contents',
+                'toclevels'    : '2',
+                'nofooter'     : 'true',
+                'sectnumlevels': '3',
+                'icons'        : 'font',
+                'setanchors'   : 'true',
+                'idprefix'     : '',
+                'idseparator'  : '-',
+                'docinfo1'     : 'false',
+                'stylesheet'   : "${rootProject.projectDir}/stylesheet/${getProperty("theme")}.css",
+                'docinfo2'     : 'false']
+    }
+    defaultTasks 'asciidoctor'
+}
