@@ -1,4 +1,8 @@
-== Finance Fundamental
+== Finance Theory
 
 === Yale Finance Theory
-include::yale-finance-theory.adoc[]
+- link:http://open.163.com/special/opencourse/financialtheory.html[NetEasy Open Course]
+- link:https://www.youtube.com/playlist?list=PLEDC55106E0BA18FC[YouTube Yale Course]
+
+=== Khan Finance Theory
+- link:http://open.163.com/special/Khan/finance.html[NetEasy Open Course]

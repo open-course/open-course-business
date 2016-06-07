@@ -1,0 +1,4 @@
+:nofooter: 'true'
+:stylesheet: 'stylesheet/foundation.css'
+
+include::index.adoc[]

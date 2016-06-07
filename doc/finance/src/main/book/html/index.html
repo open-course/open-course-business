@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4">
-<title>Finance Fundamental</title>
+<title>Finance Theory</title>
 <style>
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
@@ -182,23 +182,23 @@ object, svg { display: inline-block; vertical-align: middle; }
 
 p.lead, .paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p { font-size: 1.21875em; line-height: 1.6; }
 
-.subheader, .admonitionblock td.content > .title, .audioblock > .title, .exampleblock > .title, .imageblock > .title, .listingblock > .title, .literalblock > .title, .stemblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, table.tableblock > .title, .verseblock > .title, .videoblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title { line-height: 1.4; color: #6c818f; font-weight: 300; margin-top: 0.2em; margin-bottom: 0.5em; }
+.subheader, .admonitionblock td.content > .title, .audioblock > .title, .exampleblock > .title, .imageblock > .title, .listingblock > .title, .literalblock > .title, .stemblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, table.tableblock > .title, .verseblock > .title, .videoblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title { line-height: 1.4; color: #6f6f6f; font-weight: 300; margin-top: 0.2em; margin-bottom: 0.5em; }
 
 /* Typography resets */
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6, pre, form, p, blockquote, th, td { margin: 0; padding: 0; direction: ltr; }
 
 /* Default Link Styles */
-a { color: #444; text-decoration: underline; line-height: inherit; }
-a:hover, a:focus { color: #111; }
+a { color: #2ba6cb; text-decoration: none; line-height: inherit; }
+a:hover, a:focus { color: #2795b6; }
 a img { border: none; }
 
 /* Default paragraph styles */
-p { font-family: inherit; font-weight: normal; font-size: 1em; line-height: 1.5; margin-bottom: 1.25em; text-rendering: optimizeLegibility; }
+p { font-family: inherit; font-weight: normal; font-size: 1em; line-height: 1.6; margin-bottom: 1.25em; text-rendering: optimizeLegibility; }
 p aside { font-size: 0.875em; line-height: 1.35; font-style: italic; }
 
 /* Default header styles */
-h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 { font-family: ff-meta-web-pro-1, ff-meta-web-pro-2, Arial, "Helvetica Neue", sans-serif; font-weight: bold; font-style: normal; color: #465158; text-rendering: optimizeLegibility; margin-top: 1em; margin-bottom: 0.5em; line-height: 1.2125em; }
-h1 small, h2 small, h3 small, #toctitle small, .sidebarblock > .content > .title small, h4 small, h5 small, h6 small { font-size: 60%; color: #909ea7; line-height: 0; }
+h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal; color: #222; text-rendering: optimizeLegibility; margin-top: 1em; margin-bottom: 0.5em; line-height: 1.2125em; }
+h1 small, h2 small, h3 small, #toctitle small, .sidebarblock > .content > .title small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; }
 
 h1 { font-size: 2.125em; }
 
@@ -221,13 +221,13 @@ strong, b { font-weight: bold; line-height: inherit; }
 
 small { font-size: 60%; line-height: inherit; }
 
-code { font-family: "Consolas", "Deja Vu Sans Mono", "Bitstream Vera Sans Mono", monospace; font-weight: normal; color: #444; }
+code { font-family: Consolas, "Liberation Mono", Courier, monospace; font-weight: bold; color: #7f0a0c; }
 
 /* Lists */
-ul, ol, dl { font-size: 1em; line-height: 1.5; margin-bottom: 1.25em; list-style-position: outside; font-family: inherit; }
+ul, ol, dl { font-size: 1em; line-height: 1.6; margin-bottom: 1.25em; list-style-position: outside; font-family: inherit; }
 
-ul, ol { margin-left: 0; }
-ul.no-bullet, ol.no-bullet { margin-left: 0; }
+ul, ol { margin-left: 1.5em; }
+ul.no-bullet, ol.no-bullet { margin-left: 1.5em; }
 
 /* Unordered Lists */
 ul li ul, ul li ol { margin-left: 1.25em; margin-bottom: 0; font-size: 1em; /* Override nested font-size change */ }
@@ -241,21 +241,21 @@ ul.no-bullet { list-style: none; }
 ol li ul, ol li ol { margin-left: 1.25em; margin-bottom: 0; }
 
 /* Definition Lists */
-dl dt { margin-bottom: 0.3em; font-weight: bold; }
-dl dd { margin-bottom: 0.75em; }
+dl dt { margin-bottom: 0.3125em; font-weight: bold; }
+dl dd { margin-bottom: 1.25em; }
 
 /* Abbreviations */
-abbr, acronym { text-transform: uppercase; font-size: 90%; color: #000; border-bottom: 1px dotted #ddd; cursor: help; }
+abbr, acronym { text-transform: uppercase; font-size: 90%; color: #222; border-bottom: 1px dotted #ddd; cursor: help; }
 
 abbr { text-transform: none; }
 
 /* Blockquotes */
 blockquote { margin: 0 0 1.25em; padding: 0.5625em 1.25em 0 1.1875em; border-left: 1px solid #ddd; }
-blockquote cite { display: block; font-size: 0.8125em; color: #748590; }
+blockquote cite { display: block; font-size: 0.8125em; color: #555555; }
 blockquote cite:before { content: "\2014 \0020"; }
-blockquote cite a, blockquote cite a:visited { color: #748590; }
+blockquote cite a, blockquote cite a:visited { color: #555555; }
 
-blockquote, blockquote p { line-height: 1.5; color: #909ea7; }
+blockquote, blockquote p { line-height: 1.6; color: #6f6f6f; }
 
 /* Microformats */
 .vcard { display: inline-block; margin: 0 0 1.25em 0; border: 1px solid #ddd; padding: 0.625em 0.75em; }
@@ -271,12 +271,12 @@ blockquote, blockquote p { line-height: 1.5; color: #909ea7; }
   h3, #toctitle, .sidebarblock > .content > .title { font-size: 1.6875em; }
   h4 { font-size: 1.4375em; } }
 /* Tables */
-table { background: #fff; margin-bottom: 1.25em; border: solid 0 #ddd; }
-table thead, table tfoot { background: none; font-weight: bold; }
-table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td { padding: 1px 8px 1px 5px; font-size: 1em; color: #222; text-align: left; }
-table tr th, table tr td { padding: 1px 8px 1px 5px; font-size: 1em; color: #222; }
-table tr.even, table tr.alt, table tr:nth-of-type(even) { background: none; }
-table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td { display: table-cell; line-height: 1.5; }
+table { background: #fff; margin-bottom: 1.25em; border: solid 1px #ddd; }
+table thead, table tfoot { background: #f5f5f5; font-weight: bold; }
+table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td { padding: 0.5em 0.625em 0.625em; font-size: inherit; color: #222; text-align: left; }
+table tr th, table tr td { padding: 0.5625em 0.625em; font-size: inherit; color: #222; }
+table tr.even, table tr.alt, table tr:nth-of-type(even) { background: #f9f9f9; }
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td { display: table-cell; line-height: 1.4; }
 
 body { tab-size: 4; }
 
@@ -285,27 +285,25 @@ h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 { line-heig
 .clearfix:before, .clearfix:after, .float-group:before, .float-group:after { content: " "; display: table; }
 .clearfix:after, .float-group:after { clear: both; }
 
-*:not(pre) > code { font-size: 0.95em; font-style: normal !important; letter-spacing: 0; padding: 0; background-color: #f2f2f2; -webkit-border-radius: 6px; border-radius: 6px; line-height: inherit; }
+*:not(pre) > code { font-size: inherit; font-style: normal !important; letter-spacing: 0; padding: 0; line-height: inherit; }
 
-pre, pre > code { line-height: 1.2; color: inherit; font-family: "Consolas", "Deja Vu Sans Mono", "Bitstream Vera Sans Mono", monospace; font-weight: normal; }
+pre, pre > code { line-height: 1.4; color: black; font-family: monospace, serif; font-weight: normal; }
 
-.keyseq { color: #333333; }
+.keyseq { color: #555555; }
 
-kbd { font-family: "Consolas", "Deja Vu Sans Mono", "Bitstream Vera Sans Mono", monospace; display: inline-block; color: #000; font-size: 0.65em; line-height: 1.45; background-color: #f7f7f7; border: 1px solid #ccc; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 0.1em white inset; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 0.1em white inset; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 0.1em white inset; margin: 0 0.15em; padding: 0.2em 0.5em; vertical-align: middle; position: relative; top: -0.1em; white-space: nowrap; }
+kbd { font-family: Consolas, "Liberation Mono", Courier, monospace; display: inline-block; color: #222; font-size: 0.65em; line-height: 1.45; background-color: #f7f7f7; border: 1px solid #ccc; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 0.1em white inset; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 0.1em white inset; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 0.1em white inset; margin: 0 0.15em; padding: 0.2em 0.5em; vertical-align: middle; position: relative; top: -0.1em; white-space: nowrap; }
 
 .keyseq kbd:first-child { margin-left: 0; }
 
 .keyseq kbd:last-child { margin-right: 0; }
 
-.menuseq, .menu { color: black; }
+.menuseq, .menu { color: #090909; }
 
 b.button:before, b.button:after { position: relative; top: -1px; font-weight: normal; }
 
 b.button:before { content: "["; padding: 0 3px 0 2px; }
 
 b.button:after { content: "]"; padding: 0 2px 0 3px; }
-
-p a > code:hover { color: #373737; }
 
 #header, #content, #footnotes, #footer { width: 100%; margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0; max-width: 62.5em; *zoom: 1; position: relative; padding-left: 0.9375em; padding-right: 0.9375em; }
 #header:before, #header:after, #content:before, #content:after, #footnotes:before, #footnotes:after, #footer:before, #footer:after { content: " "; display: table; }
@@ -315,31 +313,31 @@ p a > code:hover { color: #373737; }
 
 #content:before { content: none; }
 
-#header > h1:first-child { color: #111; margin-top: 2.25rem; margin-bottom: 0; }
+#header > h1:first-child { color: #000; margin-top: 2.25rem; margin-bottom: 0; }
 #header > h1:first-child + #toc { margin-top: 8px; border-top: 1px solid #ddd; }
 #header > h1:only-child, body.toc2 #header > h1:nth-last-child(2) { border-bottom: 1px solid #ddd; padding-bottom: 8px; }
-#header .details { border-bottom: 1px solid #ddd; line-height: 1.45; padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.25em; color: #748590; display: -ms-flexbox; display: -webkit-flex; display: flex; -ms-flex-flow: row wrap; -webkit-flex-flow: row wrap; flex-flow: row wrap; }
+#header .details { border-bottom: 1px solid #ddd; line-height: 1.45; padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.25em; color: #555555; display: -ms-flexbox; display: -webkit-flex; display: flex; -ms-flex-flow: row wrap; -webkit-flex-flow: row wrap; flex-flow: row wrap; }
 #header .details span:first-child { margin-left: -0.125em; }
-#header .details span.email a { color: #909ea7; }
+#header .details span.email a { color: #6f6f6f; }
 #header .details br { display: none; }
 #header .details br + span:before { content: "\00a0\2013\00a0"; }
-#header .details br + span.author:before { content: "\00a0\22c5\00a0"; color: #909ea7; }
+#header .details br + span.author:before { content: "\00a0\22c5\00a0"; color: #6f6f6f; }
 #header .details br + span#revremark:before { content: "\00a0|\00a0"; }
 #header #revnumber { text-transform: capitalize; }
 #header #revnumber:after { content: "\00a0"; }
 
-#content > h1:first-child:not([class]) { color: #111; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-top: 0; padding-top: 1rem; margin-bottom: 1.25rem; }
+#content > h1:first-child:not([class]) { color: #000; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-top: 0; padding-top: 1rem; margin-bottom: 1.25rem; }
 
 #toc { border-bottom: 1px solid #ddd; padding-bottom: 0.5em; }
 #toc > ul { margin-left: 0.125em; }
 #toc ul.sectlevel0 > li > a { font-style: italic; }
 #toc ul.sectlevel0 ul.sectlevel1 { margin: 0.5em 0; }
-#toc ul { font-family: ff-meta-web-pro-1, ff-meta-web-pro-2, Arial, "Helvetica Neue", sans-serif; list-style-type: none; }
+#toc ul { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; list-style-type: none; }
 #toc li { line-height: 1.3334; margin-top: 0.3334em; }
 #toc a { text-decoration: none; }
 #toc a:active { text-decoration: underline; }
 
-#toctitle { color: #6c818f; font-size: 1.2em; }
+#toctitle { color: #6f6f6f; font-size: 1.2em; }
 
 @media only screen and (min-width: 768px) { #toctitle { font-size: 1.375em; }
   body.toc2 { padding-left: 15em; padding-right: 0; }
@@ -356,13 +354,13 @@ p a > code:hover { color: #373737; }
   #toc.toc2 > ul { font-size: 0.95em; }
   #toc.toc2 ul ul { padding-left: 1.25em; }
   body.toc2.toc-right { padding-left: 0; padding-right: 20em; } }
-#content #toc { border-style: solid; border-width: 1px; border-color: #d9d9d9; margin-bottom: 1.25em; padding: 1.25em; background: #f2f2f2; -webkit-border-radius: 6px; border-radius: 6px; }
+#content #toc { border-style: solid; border-width: 1px; border-color: #d9d9d9; margin-bottom: 1.25em; padding: 1.25em; background: #f2f2f2; -webkit-border-radius: 0; border-radius: 0; }
 #content #toc > :first-child { margin-top: 0; }
 #content #toc > :last-child { margin-bottom: 0; }
 
-#footer { max-width: 100%; background-color: #000; padding: 1.25em; }
+#footer { max-width: 100%; background-color: #222; padding: 1.25em; }
 
-#footer-text { color: white; line-height: 1.35; }
+#footer-text { color: #dddddd; line-height: 1.44; }
 
 .sect1 { padding-bottom: 0.625em; }
 
@@ -372,8 +370,8 @@ p a > code:hover { color: #373737; }
 #content h1 > a.anchor, h2 > a.anchor, h3 > a.anchor, #toctitle > a.anchor, .sidebarblock > .content > .title > a.anchor, h4 > a.anchor, h5 > a.anchor, h6 > a.anchor { position: absolute; z-index: 1001; width: 1.5ex; margin-left: -1.5ex; display: block; text-decoration: none !important; visibility: hidden; text-align: center; font-weight: normal; }
 #content h1 > a.anchor:before, h2 > a.anchor:before, h3 > a.anchor:before, #toctitle > a.anchor:before, .sidebarblock > .content > .title > a.anchor:before, h4 > a.anchor:before, h5 > a.anchor:before, h6 > a.anchor:before { content: "\00A7"; font-size: 0.85em; display: block; padding-top: 0.1em; }
 #content h1:hover > a.anchor, #content h1 > a.anchor:hover, h2:hover > a.anchor, h2 > a.anchor:hover, h3:hover > a.anchor, #toctitle:hover > a.anchor, .sidebarblock > .content > .title:hover > a.anchor, h3 > a.anchor:hover, #toctitle > a.anchor:hover, .sidebarblock > .content > .title > a.anchor:hover, h4:hover > a.anchor, h4 > a.anchor:hover, h5:hover > a.anchor, h5 > a.anchor:hover, h6:hover > a.anchor, h6 > a.anchor:hover { visibility: visible; }
-#content h1 > a.link, h2 > a.link, h3 > a.link, #toctitle > a.link, .sidebarblock > .content > .title > a.link, h4 > a.link, h5 > a.link, h6 > a.link { color: #465158; text-decoration: none; }
-#content h1 > a.link:hover, h2 > a.link:hover, h3 > a.link:hover, #toctitle > a.link:hover, .sidebarblock > .content > .title > a.link:hover, h4 > a.link:hover, h5 > a.link:hover, h6 > a.link:hover { color: #3b444a; }
+#content h1 > a.link, h2 > a.link, h3 > a.link, #toctitle > a.link, .sidebarblock > .content > .title > a.link, h4 > a.link, h5 > a.link, h6 > a.link { color: #222; text-decoration: none; }
+#content h1 > a.link:hover, h2 > a.link:hover, h3 > a.link:hover, #toctitle > a.link:hover, .sidebarblock > .content > .title > a.link:hover, h4 > a.link:hover, h5 > a.link:hover, h6 > a.link:hover { color: #151515; }
 
 .audioblock, .imageblock, .literalblock, .listingblock, .stemblock, .videoblock { margin-bottom: 1.25em; }
 
@@ -381,40 +379,40 @@ p a > code:hover { color: #373737; }
 
 table.tableblock > caption.title { white-space: nowrap; overflow: visible; max-width: 0; }
 
-.paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p { color: #111; }
+.paragraph.lead > p, #preamble > .sectionbody > .paragraph:first-of-type p { color: #000; }
 
 table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p { font-size: inherit; }
 
 .admonitionblock > table { border-collapse: separate; border: 0; background: none; width: 100%; }
 .admonitionblock > table td.icon { text-align: center; width: 80px; }
 .admonitionblock > table td.icon img { max-width: none; }
-.admonitionblock > table td.icon .title { font-weight: bold; font-family: ff-meta-web-pro-1, ff-meta-web-pro-2, Arial, "Helvetica Neue", sans-serif; text-transform: uppercase; }
-.admonitionblock > table td.content { padding-left: 1.125em; padding-right: 1.25em; border-left: 1px solid #ddd; color: #748590; }
+.admonitionblock > table td.icon .title { font-weight: bold; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; text-transform: uppercase; }
+.admonitionblock > table td.content { padding-left: 1.125em; padding-right: 1.25em; border-left: 1px solid #ddd; color: #555555; }
 .admonitionblock > table td.content > :last-child > :last-child { margin-bottom: 0; }
 
-.exampleblock > .content { border-style: solid; border-width: 1px; border-color: #e6e6e6; margin-bottom: 1.25em; padding: 1.25em; background: #fff; -webkit-border-radius: 6px; border-radius: 6px; }
+.exampleblock > .content { border-style: solid; border-width: 1px; border-color: #e6e6e6; margin-bottom: 1.25em; padding: 1.25em; background: #fff; -webkit-border-radius: 0; border-radius: 0; }
 .exampleblock > .content > :first-child { margin-top: 0; }
 .exampleblock > .content > :last-child { margin-bottom: 0; }
 
-.sidebarblock { border-style: solid; border-width: 1px; border-color: #d9d9d9; margin-bottom: 1.25em; padding: 1.25em; background: #f2f2f2; -webkit-border-radius: 6px; border-radius: 6px; }
+.sidebarblock { border-style: solid; border-width: 1px; border-color: #d9d9d9; margin-bottom: 1.25em; padding: 1.25em; background: #f2f2f2; -webkit-border-radius: 0; border-radius: 0; }
 .sidebarblock > :first-child { margin-top: 0; }
 .sidebarblock > :last-child { margin-bottom: 0; }
-.sidebarblock > .content > .title { color: #6c818f; margin-top: 0; }
+.sidebarblock > .content > .title { color: #6f6f6f; margin-top: 0; }
 
 .exampleblock > .content > :last-child > :last-child, .exampleblock > .content .olist > ol > li:last-child > :last-child, .exampleblock > .content .ulist > ul > li:last-child > :last-child, .exampleblock > .content .qlist > ol > li:last-child > :last-child, .sidebarblock > .content > :last-child > :last-child, .sidebarblock > .content .olist > ol > li:last-child > :last-child, .sidebarblock > .content .ulist > ul > li:last-child > :last-child, .sidebarblock > .content .qlist > ol > li:last-child > :last-child { margin-bottom: 0; }
 
 .literalblock pre, .listingblock pre:not(.highlight), .listingblock pre[class="highlight"], .listingblock pre[class^="highlight "], .listingblock pre.CodeRay, .listingblock pre.prettyprint { background: #eee; }
 .sidebarblock .literalblock pre, .sidebarblock .listingblock pre:not(.highlight), .sidebarblock .listingblock pre[class="highlight"], .sidebarblock .listingblock pre[class^="highlight "], .sidebarblock .listingblock pre.CodeRay, .sidebarblock .listingblock pre.prettyprint { background: #f2f1f1; }
 
-.literalblock pre, .literalblock pre[class], .listingblock pre, .listingblock pre[class] { border: 1px solid #ccc; -webkit-border-radius: 6px; border-radius: 6px; word-wrap: break-word; padding: 0.5em; font-size: 0.8125em; }
+.literalblock pre, .literalblock pre[class], .listingblock pre, .listingblock pre[class] { border: 1px solid #ccc; -webkit-border-radius: 0; border-radius: 0; word-wrap: break-word; padding: 0.8em 0.8em 0.65em 0.8em; font-size: 0.8125em; }
 .literalblock pre.nowrap, .literalblock pre[class].nowrap, .listingblock pre.nowrap, .listingblock pre[class].nowrap { overflow-x: auto; white-space: pre; word-wrap: normal; }
 @media only screen and (min-width: 768px) { .literalblock pre, .literalblock pre[class], .listingblock pre, .listingblock pre[class] { font-size: 0.90625em; } }
 @media only screen and (min-width: 1280px) { .literalblock pre, .literalblock pre[class], .listingblock pre, .listingblock pre[class] { font-size: 1em; } }
 
-.literalblock.output pre { color: #eee; background-color: inherit; }
+.literalblock.output pre { color: #eee; background-color: black; }
 
 .listingblock pre.highlightjs { padding: 0; }
-.listingblock pre.highlightjs > code { padding: 0.5em; -webkit-border-radius: 6px; border-radius: 6px; }
+.listingblock pre.highlightjs > code { padding: 0.8em 0.8em 0.65em 0.8em; -webkit-border-radius: 0; border-radius: 0; }
 
 .listingblock > .content { position: relative; }
 
@@ -428,7 +426,7 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p { font-si
 
 table.pyhltable { border-collapse: separate; border: 0; margin-bottom: 0; background: none; }
 
-table.pyhltable td { vertical-align: top; padding-top: 0; padding-bottom: 0; line-height: 1.2; }
+table.pyhltable td { vertical-align: top; padding-top: 0; padding-bottom: 0; line-height: 1.4; }
 
 table.pyhltable td.code { padding-left: .75em; padding-right: 0; }
 
@@ -440,23 +438,23 @@ table.pyhltable .linenodiv { background: none !important; padding-right: 0 !impo
 
 .quoteblock { margin: 0 1em 1.25em 1.5em; display: table; }
 .quoteblock > .title { margin-left: -1.5em; margin-bottom: 0.75em; }
-.quoteblock blockquote, .quoteblock blockquote p { color: #909ea7; font-size: 1.15rem; line-height: 1.75; word-spacing: 0.1em; letter-spacing: 0; font-style: italic; text-align: justify; }
+.quoteblock blockquote, .quoteblock blockquote p { color: #6f6f6f; font-size: 1.15rem; line-height: 1.75; word-spacing: 0.1em; letter-spacing: 0; font-style: italic; text-align: justify; }
 .quoteblock blockquote { margin: 0; padding: 0; border: 0; }
-.quoteblock blockquote:before { content: "\201c"; float: left; font-size: 2.75em; font-weight: bold; line-height: 0.6em; margin-left: -0.6em; color: #6c818f; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+.quoteblock blockquote:before { content: "\201c"; float: left; font-size: 2.75em; font-weight: bold; line-height: 0.6em; margin-left: -0.6em; color: #6f6f6f; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 .quoteblock blockquote > .paragraph:last-child p { margin-bottom: 0; }
 .quoteblock .attribution { margin-top: 0.5em; margin-right: 0.5ex; text-align: right; }
-.quoteblock .quoteblock { margin-left: 0; margin-right: 0; padding: 0.5em 0; border-left: 3px solid #748590; }
+.quoteblock .quoteblock { margin-left: 0; margin-right: 0; padding: 0.5em 0; border-left: 3px solid #555555; }
 .quoteblock .quoteblock blockquote { padding: 0 0 0 0.75em; }
 .quoteblock .quoteblock blockquote:before { display: none; }
 
 .verseblock { margin: 0 1em 1.25em 1em; }
-.verseblock pre { font-family: "Open Sans", "DejaVu Sans", sans; font-size: 1.15rem; color: #909ea7; font-weight: 300; text-rendering: optimizeLegibility; }
+.verseblock pre { font-family: "Open Sans", "DejaVu Sans", sans; font-size: 1.15rem; color: #6f6f6f; font-weight: 300; text-rendering: optimizeLegibility; }
 .verseblock pre strong { font-weight: 400; }
 .verseblock .attribution { margin-top: 1.25rem; margin-left: 0.5ex; }
 
 .quoteblock .attribution, .verseblock .attribution { font-size: 0.8125em; line-height: 1.45; font-style: italic; }
 .quoteblock .attribution br, .verseblock .attribution br { display: none; }
-.quoteblock .attribution cite, .verseblock .attribution cite { display: block; letter-spacing: -0.025em; color: #748590; }
+.quoteblock .attribution cite, .verseblock .attribution cite { display: block; letter-spacing: -0.025em; color: #555555; }
 
 .quoteblock.abstract { margin: 0 0 1.25em 0; display: block; }
 .quoteblock.abstract blockquote, .quoteblock.abstract blockquote p { text-align: left; word-spacing: 0; }
@@ -467,25 +465,25 @@ table.tableblock td > .paragraph:last-child p > p:last-child, table.tableblock t
 
 table.tableblock, th.tableblock, td.tableblock { border: 0 solid #ddd; }
 
-table.grid-all th.tableblock, table.grid-all td.tableblock { border-width: 0 0 0 0; }
+table.grid-all th.tableblock, table.grid-all td.tableblock { border-width: 0 1px 1px 0; }
 
-table.grid-all tfoot > tr > th.tableblock, table.grid-all tfoot > tr > td.tableblock { border-width: 0 0 0 0; }
+table.grid-all tfoot > tr > th.tableblock, table.grid-all tfoot > tr > td.tableblock { border-width: 1px 1px 0 0; }
 
-table.grid-cols th.tableblock, table.grid-cols td.tableblock { border-width: 0 0 0 0; }
+table.grid-cols th.tableblock, table.grid-cols td.tableblock { border-width: 0 1px 0 0; }
 
 table.grid-all * > tr > .tableblock:last-child, table.grid-cols * > tr > .tableblock:last-child { border-right-width: 0; }
 
-table.grid-rows th.tableblock, table.grid-rows td.tableblock { border-width: 0 0 0 0; }
+table.grid-rows th.tableblock, table.grid-rows td.tableblock { border-width: 0 0 1px 0; }
 
 table.grid-all tbody > tr:last-child > th.tableblock, table.grid-all tbody > tr:last-child > td.tableblock, table.grid-all thead:last-child > tr > th.tableblock, table.grid-rows tbody > tr:last-child > th.tableblock, table.grid-rows tbody > tr:last-child > td.tableblock, table.grid-rows thead:last-child > tr > th.tableblock { border-bottom-width: 0; }
 
-table.grid-rows tfoot > tr > th.tableblock, table.grid-rows tfoot > tr > td.tableblock { border-width: 0 0 0 0; }
+table.grid-rows tfoot > tr > th.tableblock, table.grid-rows tfoot > tr > td.tableblock { border-width: 1px 0 0 0; }
 
-table.frame-all { border-width: 0; }
+table.frame-all { border-width: 1px; }
 
-table.frame-sides { border-width: 0 0; }
+table.frame-sides { border-width: 0 1px; }
 
-table.frame-topbot { border-width: 0 0; }
+table.frame-topbot { border-width: 1px 0; }
 
 th.halign-left, td.halign-left { text-align: left; }
 
@@ -501,7 +499,7 @@ th.valign-middle, td.valign-middle { vertical-align: middle; }
 
 table thead th, table tfoot th { font-weight: bold; }
 
-tbody tr th { display: table-cell; line-height: 1.5; background: none; }
+tbody tr th { display: table-cell; line-height: 1.4; background: #f5f5f5; }
 
 tbody tr th, tbody tr th p, tfoot tr th, tfoot tr th p { color: #222; font-weight: bold; }
 
@@ -511,9 +509,9 @@ p.tableblock { font-size: 1em; }
 
 td > div.verse { white-space: pre; }
 
-ol { margin-left: 0.25em; }
+ol { margin-left: 1.75em; }
 
-ul li ol { margin-left: 0; }
+ul li ol { margin-left: 1.5em; }
 
 dl dd { margin-left: 1.125em; }
 
@@ -669,13 +667,13 @@ div.unbreakable { page-break-inside: avoid; }
 span.icon > .fa { cursor: default; }
 
 .admonitionblock td.icon [class^="fa icon-"] { font-size: 2.5em; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); cursor: default; }
-.admonitionblock td.icon .icon-note:before { content: "\f05a"; color: #333333; }
+.admonitionblock td.icon .icon-note:before { content: "\f05a"; color: #207d98; }
 .admonitionblock td.icon .icon-tip:before { content: "\f0eb"; text-shadow: 1px 1px 2px rgba(155, 155, 0, 0.8); color: #111; }
 .admonitionblock td.icon .icon-warning:before { content: "\f071"; color: #bf6900; }
 .admonitionblock td.icon .icon-caution:before { content: "\f06d"; color: #bf3400; }
 .admonitionblock td.icon .icon-important:before { content: "\f06a"; color: #bf0000; }
 
-.conum[data-value] { display: inline-block; color: #fff !important; background-color: #000; -webkit-border-radius: 100px; border-radius: 100px; text-align: center; font-size: 0.75em; width: 1.67em; height: 1.67em; line-height: 1.67em; font-family: "Open Sans", "DejaVu Sans", sans-serif; font-style: normal; font-weight: bold; }
+.conum[data-value] { display: inline-block; color: #fff !important; background-color: #222; -webkit-border-radius: 100px; border-radius: 100px; text-align: center; font-size: 0.75em; width: 1.67em; height: 1.67em; line-height: 1.67em; font-family: "Open Sans", "DejaVu Sans", sans-serif; font-style: normal; font-weight: bold; }
 .conum[data-value] * { color: #fff !important; }
 .conum[data-value] + b { display: none; }
 .conum[data-value]:after { content: attr(data-value); }
@@ -685,24 +683,7 @@ b.conum * { color: inherit !important; }
 
 .conum:not([data-value]):empty { display: none; }
 
-h4 { color: #6c818f; }
-
-.literalblock > .content > pre, .listingblock > .content > pre { -webkit-border-radius: 6px; border-radius: 6px; margin-left: 2em; margin-right: 2em; }
-
-.admonitionblock { margin-left: 2em; margin-right: 2em; }
-.admonitionblock > table { border: 1px solid #609060; border-top-width: 1.5em; background-color: #e9ffe9; border-collapse: separate; -webkit-border-radius: 0; border-radius: 0; }
-.admonitionblock > table td.icon { padding-top: .5em; padding-bottom: .5em; }
-.admonitionblock > table td.content { padding: .5em 1em; color: #000; font-size: .9em; border-left: none; }
-
-.sidebarblock { background-color: #e8ecef; border-color: #ccc; }
-.sidebarblock > .content > .title { color: #444; }
-
-table.tableblock.grid-all { border-collapse: collapse; -webkit-border-radius: 0; border-radius: 0; }
-table.tableblock.grid-all th.tableblock, table.tableblock.grid-all td.tableblock { border-bottom: 1px solid #aaa; }
-
-#footer { background-color: #465158; padding: 2em; }
-
-#footer-text { color: #eee; font-size: 0.8em; text-align: center; }
+.literalblock pre, .listingblock pre { background: #eee; }
 
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -712,9 +693,10 @@ table.tableblock.grid-all th.tableblock, table.tableblock.grid-all td.tableblock
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#finance-fundamental">1. Finance Fundamental</a>
+<li><a href="#finance-theory">1. Finance Theory</a>
 <ul class="sectlevel2">
 <li><a href="#yale-finance-theory">1.1. Yale Finance Theory</a></li>
+<li><a href="#khan-finance-theory">1.2. Khan Finance Theory</a></li>
 </ul>
 </li>
 </ul>
@@ -722,322 +704,29 @@ table.tableblock.grid-all th.tableblock, table.tableblock.grid-all td.tableblock
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="finance-fundamental">1. Finance Fundamental</h2>
+<h2 id="finance-theory">1. Finance Theory</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="yale-finance-theory">1.1. Yale Finance Theory</h3>
-<div class="sect3">
-<h4 id="why-finance">1.1.1. Why Finance</h4>
-<div class="paragraph">
-<p>This lecture gives a brief history of the young field of financial theory, which began in business schools quite separate from economics, and of my growing interest in the field and in Wall Street. A cornerstone of standard financial theory is the efficient markets hypothesis, but that has been discredited by the financial crisis of 2007-09. This lecture describes the kinds of questions standard financial theory nevertheless answers well. It also introduces the leverage cycle as a critique of standard financial theory and as an explanation of the crisis. The lecture ends with a class experiment illustrating a situation in which the efficient markets hypothesis works surprisingly well.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/vTs2IQ8OefQ?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="utilities-endowments-and-equilibrium">1.1.2. Utilities, Endowments, and Equilibrium</h4>
-<div class="paragraph">
-<p>This lecture explains what an economic model is, and why it allows for counterfactual reasoning and often yields paradoxical conclusions. Typically, equilibrium is defined as the solution to a system of simultaneous equations. The most important economic model is that of supply and demand in one market, which was understood to some extent by the ancient Greeks and even by Shakespeare. That model accurately fits the experiment from the last class, as well as many other markets, such as the Paris Bourse, online trading, the commodities pit, and a host of others. The modern theory of general economic equilibrium described in this lecture extends that model to continuous quantities and multiple commodities. It is the bedrock on which we will build the model of financial equilibrium in subsequent lectures.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/VX4eYYmvQ78?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="computing-equilibrium">1.1.3. Computing Equilibrium</h4>
-<div class="paragraph">
-<p>Our understanding of the economy will be more tangible and vivid if we can in principle explain all the economic decisions of every agent in the economy. This lecture demonstrates, with two examples, how the theory lets us calculate equilibrium prices and allocations in a simple economy, either by hand or using a computer. In future lectures we shall extend this method so as to compute equilibrium in financial economies with stocks and bonds and other financial assets.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/8ITrtcbyTWw?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="efficiency-assets-and-time">1.1.4. Efficiency, Assets, and Time</h4>
-<div class="paragraph">
-<p>Over time, economists' justifications for why free markets are a good thing have changed. In the first few classes, we saw how under some conditions, the competitive allocation maximizes the sum of agents' utilities. When it was found that this property didn&#8217;t hold generally, the idea of Pareto efficiency was developed. This class reviews two proofs that equilibrium is Pareto efficient, looking at the arguments of economists Edgeworth and Arrow-Debreu. The lecture suggests that if a broadening of the economic model invalidated the sum of utilities justification of free markets, a further broadening might invalidate the Pareto efficiency justification of unregulated markets. Finally, Professor Geanakoplos discusses how Irving Fisher introduced two crucial ingredients of finance&#8212;&#8203;time and assets&#8212;&#8203;into the standard economic equilibrium model.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/b7OUq1hMBbQ?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="present-value-prices-and-the-real-rate-of-interest">1.1.5. Present Value Prices and the Real Rate of Interest</h4>
-<div class="paragraph">
-<p>Philosophers and theologians have railed against interest for thousands of years. But that is because they didn&#8217;t understand what causes interest. Irving Fisher built a model of financial equilibrium on top of general equilibrium (GE) by introducing time and assets into the GE model. He saw that trade between apples today and apples next year is completely analogous to trade between apples and oranges today. Similarly he saw that in a world without uncertainty, assets like stocks and bonds are significant only for the dividends they pay in the future, just like an endowment of multiple goods. With these insights Fisher was able to show that he could solve his model of financial equilibrium for interest rates, present value prices, asset prices, and allocations with precisely the same techniques we used to solve for general equilibrium. He concluded that the real rate of interest is a relative price, and just like any other relative price, is determined by market participants' preferences and endowments, an insight that runs counter to the intuitions held by philosophers throughout much of human history. His theory did not explain the nominal rate of interest or inflation, but only their ratio.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/IVxmtb3zTlk?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="irving-fisher-s-impatience-theory-of-interest">1.1.6. Irving Fisher&#8217;s Impatience Theory of Interest</h4>
-<div class="paragraph">
-<p>Building on the general equilibrium setup solved in the last week, this lecture looks in depth at the relationships between productivity, patience, prices, allocations, and nominal and real interest rates. The solutions are given to three of Fisher&#8217;s famous examples: What happens to interest rates when people become more or less patient? What happens when they expect to receive windfall riches sometime in the future? And, what happens when wealth in an economy is redistributed from the poor to the rich?</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/GTzatG_pUmg?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="present-value-and-the-vocabulary-of-finance">1.1.7. Present Value and the Vocabulary of Finance</h4>
-<div class="paragraph">
-<p>While economists didn&#8217;t have a good theory of interest until Irving Fisher came along, and didn&#8217;t understand the role of collateral until even later, Shakespeare understood many of these things hundreds of years earlier. The first half of this lecture examines Shakespeare&#8217;s economic insights in depth, and sees how they sometimes prefigured or even surpassed Irving Fisher&#8217;s intuitions. The second half of this lecture uses the concept of present value to define and explain some of the basic financial instruments: coupon bonds, annuities, perpetuities, and mortgages.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/FJW9eGGH_tg?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="how-a-long-lived-institution-figures-an-annual-budget">1.1.8. How a Long-Lived Institution Figures an Annual Budget</h4>
-<div class="paragraph">
-<p>In the 1990s, Yale discovered that it was faced with a deferred maintenance problem: the university hadn&#8217;t properly planned for important renovations in many buildings. A large, one-time expenditure would be needed. How should Yale have covered these expenses? This lecture begins by applying the lessons learned so far to show why Yale&#8217;s initial forecast budget cuts were overly pessimistic. In the second half of the class, we turn to the problem of measuring investment performance, and examine the strengths and weaknesses of various measures of yield, including yield-to-maturity and current yield.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/J8ZqrBvW07s?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="yield-curve-arbitrage">1.1.9. Yield Curve Arbitrage</h4>
-<div class="paragraph">
-<p>Where can you find the market rates of interest (or equivalently the zero coupon bond prices) for every maturity? This lecture shows how to infer them from the prices of Treasury bonds of every maturity, first using the method of replication, and again using the principle of duality. Treasury bond prices, or at least Treasury bond yields, are published every day in major newspapers. From the zero coupon bond prices one can immediately infer the forward interest rates. Under certain conditions these forward rates can tell us a lot about how traders think the prices of Treasury bonds will evolve in the future.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/5SHYky2ddp4?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="dynamic-present-value">1.1.10. Dynamic Present Value</h4>
-<div class="paragraph">
-<p>In this lecture we move from present values to dynamic present values. If interest rates evolve along the forward curve, then the present value of the remaining cash flows of any instrument will evolve in a predictable trajectory. The fastest way to compute these is by backward induction. Dynamic present values help us understand the returns of various trading strategies, and how marking-to-market can prevent some subtle abuses of the system. They explain how mortgages work, why they&#8217;re called amortizing, and what is meant by the remaining balance. In the second half of the lecture we turn to an important application of present value thinking: an analysis of the troubles facing the Social Security system.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/Hgj2LL7HetM?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="social-security">1.1.11. Social Security</h4>
-<div class="paragraph">
-<p>This lecture continues the analysis of Social Security started at the end of the last class. We describe the creation of the system in 1938 by Franklin Roosevelt and Frances Perkins and its current financial troubles. For many Democrats, Social Security is the most successful government program ever devised and for many Republicans Social Security is a bankrupt program that needs to be privatized. Is there any way to reconcile the views of Democrats and Republicans? How did the system get into so much financial trouble? We will see that the mess becomes quite clear when examined with the proper present value approach. Present value analysis reveals the flaws in the three most popular analyses of Social Security, that the financial breakdown is the fault of the baby boomers, that privatization would bring young investors a better return than they anticipate getting from their social security contributions, and that privatization is impossible without compromising today&#8217;s retired workers.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/WMyOjHtFVFU?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="overlapping-generations-models-of-the-economy">1.1.12. Overlapping Generations Models of the Economy</h4>
-<div class="paragraph">
-<p>In order for Social Security to work, people have to believe there&#8217;s some possibility that the world will last forever, so that each old generation will have a young generation to support it. The overlapping generations model, invented by Allais and Samuelson but here augmented with land, represents such a situation. Financial equilibrium can again be reduced to general equilibrium. At first glance it would seem that the model requires a solution of an infinite number of supply equals demand equations, one for each time period. But by assuming stationarity, the whole analysis can be reduced to one equation. In this mathematical framework we reach an even more precise and subtle understanding of Social Security and the real rate of interest. We find that Social Security likely increases the real rate of interest. The presence of land, an infinitely lived asset that pays a perpetual dividend, forces the real rate of interest to be positive, exposing the flaw in Samuelson&#8217;s contention that Social Security is a giant, yet beneficial, Ponzi scheme where each generation can win by perpetually deferring a growing cost.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/ecqWJ_7ERCI?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="demography-and-asset-pricing">1.1.13. Demography and Asset Pricing</h4>
-<div class="paragraph">
-<p>In this lecture, we use the overlapping generations model from the previous class to see, mathematically, how demographic changes can influence interest rates and asset prices. We evaluate Tobin&#8217;s statement that a perpetually growing population could solve the Social Security problem, and resolve, in a surprising way, a classical argument about the link between birth rates and the level of the stock market. Lastly, we finish by laying some of the philosophical and statistical groundwork for dealing with uncertainty.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/cMjAdnQA7xk?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="quantifying-uncertainty-and-risk">1.1.14. Quantifying Uncertainty and Risk</h4>
-<div class="paragraph">
-<p>Until now, the models we&#8217;ve used in this course have focused on the case where everyone can perfectly forecast future economic conditions. Clearly, to understand financial markets, we have to incorporate uncertainty into these models. The first half of this lecture continues reviewing the key statistical concepts that we&#8217;ll need to be able to think seriously about uncertainty, including expectation, variance, and covariance. We apply these concepts to show how diversification can reduce risk exposure. Next we show how expectations can be iterated through time to rapidly compute conditional expectations: if you think the Yankees have a 60% chance of winning any game against the Dodgers, what are the odds the Yankees will win a seven game series once they are up 2 games to 1? Finally we allow the interest rate, the most important variable in the economy according to Irving Fisher, to be uncertain. We ask whether interest rate uncertainty tends to make a dollar in the distant future more valuable or less valuable.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/yvcg_WE5O-o?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="uncertainty-and-the-rational-expectations-hypothesis">1.1.15. Uncertainty and the Rational Expectations Hypothesis</h4>
-<div class="paragraph">
-<p>According to the rational expectations hypothesis, traders know the probabilities of future events, and value uncertain future payoffs by discounting their expected value at the riskless rate of interest. Under this hypothesis the best predictor of a firm&#8217;s valuation in the future is its stock price today. In one famous test of this hypothesis, it was found that detailed weather forecasts could not be used to improve on contemporaneous orange prices as a predictor of future orange prices, but that orange prices could improve contemporaneous weather forecasts. Under the rational expectations hypothesis you can infer more about the odds of corporate or sovereign bonds defaulting by looking at their prices than by reading about the financial condition of their issuers.
-On the other hand, when discount rates rather than payoffs are uncertain, today&#8217;s one year rate grossly overestimates the long run annualized rate. If today&#8217;s one year interest rate is 4%, and if the one year interest rate follows a geometric random walk, then the value today of one dollar in T years is described in the long run by the hyperbolic function 1/√T, which is much larger than the exponential function 1/(1.04)T, no matter what the constant K. Hyperbolic discounting is the term used to describe the tendency of animals and humans to value the distant future much more than would be implied by (exponentially) discounting at a constant rate such as 4%. Hyperbolic discounting can justify expenses taken today to improve the environment in 500 years that could not be justified under exponential discounting.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/RS2DJmyGI8Y?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="backward-induction-and-optimal-stopping-times">1.1.16. Backward Induction and Optimal Stopping Times</h4>
-<div class="paragraph">
-<p>In the first part of the lecture we wrap up the previous discussion of implied default probabilities, showing how to calculate them quickly by using the same duality trick we used to compute forward interest rates, and showing how to interpret them as spreads in the forward rates. The main part of the lecture focuses on the powerful tool of backward induction, once used in the early 1900s by the mathematician Zermelo to prove the existence of an optimal strategy in chess. We explore its application in a series of optimal stopping problems, starting with examples quite distant from economics such as how to decide when it is time to stop dating and get married. In each case we find that the option to continue is surprisingly valuable.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/IPNl-jD1vhw?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="callable-bonds-and-the-mortgage-prepayment-option">1.1.17. Callable Bonds and the Mortgage Prepayment Option</h4>
-<div class="paragraph">
-<p>This lecture is about optimal exercise strategies for callable bonds, which are bonds bundled with an option that allows the borrower to pay back the loan early, if she chooses. Using backward induction, we calculate the borrower&#8217;s optimal strategy and the value of the option. As with the simple examples in the previous lecture, the option value turns out to be very large. The most important callable bond is the fixed rate amortizing mortgage; calling a mortgage means prepaying your remaining balance. We examine how high bankers must set the mortgage rate in order to compensate for the prepayment option they give homeowners. Looking at data on mortgage rates we see that mortgage borrowers often fail to prepay optimally.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/rH-0KBgQk2E?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="modeling-mortgage-prepayments-and-valuing-mortgages">1.1.18. Modeling Mortgage Prepayments and Valuing Mortgages</h4>
-<div class="paragraph">
-<p>A mortgage involves making a promise, backing it with collateral, and defining a way to dissolve the promise at prearranged terms in case you want to end it by prepaying. The option to prepay, the refinancing option, makes the mortgage much more complicated than a coupon bond, and therefore something that a hedge fund could make money trading. In this lecture we discuss how to build and calibrate a model to forecast prepayments in order to value mortgages. Old fashioned economists still make non-contingent forecasts, like the recent predictions that unemployment would peak at 8%. A model makes contingent forecasts. The old prepayment models fit a curve to historical data estimating how sensitive aggregate prepayments have been to changes in the interest rate. The modern agent based approach to modeling rationalizes behavior at the individual level and allows heterogeneity among individual types. From either kind of model we see that mortgages are very risky securities, even in the absence of default. This raises the question of how investors and banks should hedge them.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/qbEsK92KpQI?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="history-of-the-mortgage-market-a-personal-narrative">1.1.19. History of the Mortgage Market A Personal Narrative</h4>
-<div class="paragraph">
-<p>Professor Geanakoplos explains how, as a mathematical economist, he became interested in the practical world of mortgage securities, and how he became the Head of Fixed Income Securities at Kidder Peabody, and then one of six founding partners of Ellington Capital Management. During that time Kidder Peabody became the biggest issuer of collateralized mortgage obligations, and Ellington became the biggest mortgage hedge fund. He describes securitization and tranching of mortgage pools, the role of investment banks and hedge funds, and the evolution of the prime and subprime mortgage markets. He also discusses agent based models of prepayments in the mortgage market.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/9pFfOe2d_h0?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="dynamic-hedging">1.1.20. Dynamic Hedging</h4>
-<div class="paragraph">
-<p>Professor Geanakoplos explains how, as a mathematical economist, he became interested in the practical world of mortgage securities, and how he became the Head of Fixed Income Securities at Kidder Peabody, and then one of six founding partners of Ellington Capital Management. During that time Kidder Peabody became the biggest issuer of collateralized mortgage obligations, and Ellington became the biggest mortgage hedge fund. He describes securitization and tranching of mortgage pools, the role of investment banks and hedge funds, and the evolution of the prime and subprime mortgage markets. He also discusses agent based models of prepayments in the mortgage market.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/gXrCrXuU2_g?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="dynamic-hedging-and-average-life">1.1.21. Dynamic Hedging and Average Life</h4>
-<div class="paragraph">
-<p>This lecture reviews the intuition from the previous class, where the idea of dynamic hedging was introduced. We learn why the crucial idea of dynamic hedging is marking to market: even when there are millions of possible scenarios that could come to pass over time, by hedging a little bit each step of the way, the number of possibilities becomes much more manageable. We conclude the discussion of hedging by introducing a measure for the average life of a bond, and show how traders use this to figure out the appropriate hedge against interest rate movements.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/DAd7LFM0jK8?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="risk-aversion-and-the-capital-asset-pricing-theorem">1.1.22. Risk Aversion and the Capital Asset Pricing Theorem</h4>
-<div class="paragraph">
-<p>Until now we have ignored risk aversion. The Bernoulli brothers were the first to suggest a tractable way of representing risk aversion. They pointed out that an explanation of the St. Petersburg paradox might be that people care about expected utility instead of expected income, where utility is some concave function, such as the logarithm. One of the most famous and important models in financial economics is the Capital Asset Pricing Model, which can be derived from the hypothesis that every agent has a (different) quadratic utility. Much of the modern mutual fund industry is based on the implications of this model. The model describes what happens to prices and asset holdings in general equilibrium when the underlying risks can&#8217;t be hedged in the aggregate. It turns out that the tools we developed in the beginning of this course provide an answer to this question.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/aGQsjueE07Y?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="the-mutual-fund-theorem-and-covariance-pricing-theorems">1.1.23. The Mutual Fund Theorem and Covariance Pricing Theorems</h4>
-<div class="paragraph">
-<p>This lecture continues the analysis of the Capital Asset Pricing Model, building up to two key results. One, the Mutual Fund Theorem proved by Tobin, describes the optimal portfolios for agents in the economy. It turns out that every investor should try to maximize the Sharpe ratio of his portfolio, and this is achieved by a combination of money in the bank and money invested in the "market" basket of all existing assets. The market basket can be thought of as one giant index fund or mutual fund. This theorem precisely defines optimal diversification. It led to the extraordinary growth of mutual funds like Vanguard. The second key result of CAPM is called the covariance pricing theorem because it shows that the price of an asset should be its discounted expected payoff less a multiple of its covariance with the market. The riskiness of an asset is therefore measured by its covariance with the market, rather than by its variance. We conclude with the shocking answer to a puzzle posed during the first class, about the relative valuations of a large industrial firm and a risky pharmaceutical start-up.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/3PrwVXPCeNI?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="risk-return-and-social-security">1.1.24. Risk, Return, and Social Security</h4>
-<div class="paragraph">
-<p>This lecture addresses some final points about the CAPM. How would one test the theory? Given the theory, what&#8217;s the right way to think about evaluating fund managers' performance? Should the manager of a hedge fund and the manager of a university endowment be judged by the same performance criteria? More generally, how should we think about the return differential between stocks and bonds? Lastly, looking back to the lectures on Social Security earlier in the semester, how should the CAPM inform our thinking about the role of stocks and bonds in Social Security? Can the views of Democrats and Republicans be reconciled? What if Social Security were privatized, but workers were forced to hold their assets in a new kind of asset called PAAWS, which pay the holder more if the wage of young workers is higher?</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/tSN9lDnbTNk?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="the-leverage-cycle-and-the-subprime-mortgage-crisis">1.1.25. The Leverage Cycle and the Subprime Mortgage Crisis</h4>
-<div class="paragraph">
-<p>Standard financial theory left us woefully unprepared for the financial crisis of 2007-09. Something is missing in the theory. In the majority of loans the borrower must agree on an interest rate and also on how much collateral he will put up to guarantee repayment. The standard theory presented in all the textbooks ignores collateral. The next two lectures introduce a theory of the Leverage Cycle, in which default and collateral are endogenously determined. The main implication of the theory is that when collateral requirements get looser and leverage increases, asset prices rise, but then when collateral requirements get tougher and leverage decreases, asset prices fall. This stands in stark contrast to the fundamental value theory of asset pricing we taught so far. We&#8217;ll look at a number of facts about the subprime mortgage crisis, and see whether the new theory offers convincing explanations.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/lb5Q1Jur0I0?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="the-leverage-cycle-and-crashes">1.1.26. The Leverage Cycle and Crashes</h4>
-<div class="paragraph">
-<p>In order to understand the precise predictions of the Leverage Cycle theory, in this last class we explicitly solve two mathematical examples of leverage cycles. We show how supply and demand determine leverage as well as the interest rate, and how impatience and volatility play crucial roles in setting the interest rate and the leverage. Mathematically, the model helps us identify the three key elements of a crisis. First, scary bad news increases uncertainty. Second, leverage collapses. Lastly, the most optimistic people get crushed, so the new marginal buyers are far less sanguine about the economy. The result is that the drop in asset prices is amplified far beyond what any market participant would expect from the news alone. If we want to mitigate the fallout from a crisis, the place to begin is in controlling those three elements. If we want to prevent leverage cycle crashes, we must monitor leverage and regulate it, the same way we monitor and adjust interest rates.</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe width="640" height="450" src="https://www.youtube.com/embed/yenfxh_arkg?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-<hr>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://open.163.com/special/opencourse/financialtheory.html">NetEasy Open Course</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/playlist?list=PLEDC55106E0BA18FC">YouTube Yale Course</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="khan-finance-theory">1.2. Khan Finance Theory</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://open.163.com/special/Khan/finance.html">NetEasy Open Course</a></p>
+</li>
+</ul>
 </div>
 </div>
 </div>
