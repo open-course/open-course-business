@@ -1,4 +1,7 @@
-:nofooter: 'true'
-:stylesheet: 'stylesheet/foundation.css'
+:nofooter: true
+:stylesheet: stylesheet/foundation.css
 
-include::index.adoc[]
+
+== Business Open Course
+- Accounting
+- link:http://open-course.github.io/open-course-business/doc/finance/src/main/book/html[Finance]

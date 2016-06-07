@@ -1,3 +1,3 @@
 #!/bin/sh
-asciidoctor index.adoc
+asciidoctor README.adoc -o index.html
 ./gradlew asciidoctor
